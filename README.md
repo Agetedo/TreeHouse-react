@@ -1,6 +1,7 @@
 # [TreeHouse store](https://thstore.netlify.app/) << deploy
 
-- React(Hooks), Vite
+- React(hooks)
+- Vite
 - react-dom
 - react-router-dom(createBrowserRouter)
 - react-accessible-accordion
