@@ -8,11 +8,11 @@ export default function Layout() {
   return (
     <>
       <Header />
-        <main>
-          <Suspense fallback={<Loader />}>
-            <Outlet />
-          </Suspense>
-        </main>
+      <main>
+        <Suspense fallback={<Loader />}>
+          <Outlet />
+        </Suspense>
+      </main>
       <Footer />
     </>
   );
