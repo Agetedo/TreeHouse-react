@@ -3,11 +3,11 @@ import AllCategories from "../components/AllCategories";
 import TrackOrder from "../components/TrackOrder";
 
 export default function Shop() {
-    return (
-        <>
-          <ShopAllBaner />
-          <AllCategories />
-          <TrackOrder />
-        </>
-    );
+  return (
+    <>
+      <ShopAllBaner />
+      <AllCategories />
+      <TrackOrder />
+    </>
+  );
 }
