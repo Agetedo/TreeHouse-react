@@ -33,7 +33,7 @@
 }
 //---@media-shop__baner--------------
 @media(max-width: 1234px) {
-    .shop__baner .conteiner {
+  .shop__baner .conteiner {
       padding: 0px;
     }
     .baner {
@@ -48,7 +48,7 @@
           font-size: calc(9px + (14 - 9)*((100vw - 320px)/(1234 - 320)));
           line-height: calc(9px + (14 - 9)*((100vw - 320px)/(1234 - 320)));
         }
-    }
+  }
 }
 @media(max-width: 1024px) {
     .baner {
