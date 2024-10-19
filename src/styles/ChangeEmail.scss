@@ -33,9 +33,9 @@
 }
 //---@media-change-email---------------
 @media(max-width: 1440px) {
-    .change-email {
-      margin-bottom: calc(50px + (160 - 50)*((100vw - 320px)/(1440 - 320)));
-    }
+  .change-email {
+    margin-bottom: calc(50px + (160 - 50)*((100vw - 320px)/(1440 - 320)));
+  }
 }
 @media(max-width: 1264px) {
     .change-email__items {
