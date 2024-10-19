@@ -22,9 +22,9 @@
 }
 //---@media-page-link------------------
 @media (hover: hover) and (pointer: fine) {
-    .page-link__items a:hover {
-      color: var(--light-brown-color);
-    }
+  .page-link__items a:hover {
+    color: var(--light-brown-color);
+  }
 }
 @media (hover: none) {
     .page-link__items a:active {
