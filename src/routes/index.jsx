@@ -45,4 +45,5 @@ const routes = [
     { path: PathConstants.ARTICLE05PAGE, element: <Article05 /> },
     { path: PathConstants.ARTICLE06PAGE, element: <Article06 /> },
 ]
+
 export default routes;
