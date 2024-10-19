@@ -36,18 +36,18 @@
 }
 //---templates-for-details---
 @keyframes pulsate-bck {
-    0% {
-      -webkit-transform: scale(3);
-              transform: scale(3);
-    }
-    50% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-    }
-    100% {
-      -webkit-transform: scale(2.5);
-              transform: scale(2.5);
-    }
+  0% {
+    -webkit-transform: scale(3);
+            transform: scale(3);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(2.5);
+            transform: scale(2.5);
+  }
 }
 %pointPosition {
     position: absolute;
