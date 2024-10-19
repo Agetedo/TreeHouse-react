@@ -23,17 +23,17 @@
 }
 //---@media-champion-------------------------
 @media(max-width: 1440px) {
-    .champion {
-      margin-top: calc(40px + (160 - 40)*((100vw - 320px)/(1440 - 320)));
-    }
+  .champion {
+    margin-top: calc(40px + (160 - 40)*((100vw - 320px)/(1440 - 320)));
+  }
 }
 @media(max-width: 1219px) {
-    .champion__title span {
-      margin-top: 30px;
-    }
+  .champion__title span {
+    margin-top: 30px;
+  }
 }
 @media(max-width: 1024px) {
-    .champion {
-      display: none;
-    }
+  .champion {
+    display: none;
+  }
 }
