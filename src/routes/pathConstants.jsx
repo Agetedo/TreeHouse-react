@@ -20,4 +20,5 @@ const PathConstants = {
     ARTICLE05PAGE: "/article05-page",
     ARTICLE06PAGE: "/article06-page",
 }
+
 export default PathConstants;
