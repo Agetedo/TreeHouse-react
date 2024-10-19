@@ -76,12 +76,12 @@
 }
 //---@media-category------------------
 @media (hover: hover) and (pointer: fine) {
-    .swiper-pagination-bullet:hover {
-        color: var(--light-brown-color);
-    }
-    .swiper-pagination-bullet-active:hover {
-        opacity: 0.6;
-    }
+  .swiper-pagination-bullet:hover {
+    color: var(--light-brown-color);
+  }
+  .swiper-pagination-bullet-active:hover {
+     opacity: 0.6;
+  }
 }
 @media (hover: none) {
     .swiper-pagination-bullet:active {
