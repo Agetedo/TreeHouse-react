@@ -1,8 +1,8 @@
 # [TreeHouse store](https://thstore.netlify.app/) << deploy
 
-- React(hooks)
+- React: useState,
 - Vite
-- react-router-dom(createBrowserRouter)
+- react-router-dom: createBrowserRouter,
 - react-accessible-accordion
 - react-error-boundary
 - react-scroll-to-top
