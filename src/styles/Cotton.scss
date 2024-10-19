@@ -43,15 +43,15 @@
     }
 }
 #cottonLabel01 {
-    position: absolute;
-    top: 204px;
-    right: 42px;
+  position: absolute;
+  top: 204px;
+  right: 42px;
 }
 #cottonlabel02 {
-    position: absolute;
-    top: 295px;
-    right: 0px;
-    animation: flicker-3 2.5s linear infinite both;
+  position: absolute;
+  top: 295px;
+  right: 0px;
+  animation: flicker-3 2.5s linear infinite both;
 }
 //---@media-cotton----------------------
 @media(max-width: 1440px) {
