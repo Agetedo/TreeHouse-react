@@ -41,9 +41,9 @@
 }
 //---@media-process----------------
 @media (hover: hover) and (pointer: fine) {
-    .process__link:hover {
-      color: var(--light-brown-color);
-    }
+  .process__link:hover {
+    color: var(--light-brown-color);
+  }
 }
 @media (hover: none) {
     .process__link:active {
