@@ -52,20 +52,20 @@
 }
 //---@media-commitment------------------
 @media (hover: hover) and (pointer: fine) {
-    .commitment__button a:hover {
-      color: var(--green-color);
-    }
+  .commitment__button a:hover {
+    color: var(--green-color);
+  }
 }
 @media (hover: none) {
-    .commitment__button a:active {
-      color: var(--green-color);
-    }
+  .commitment__button a:active {
+    color: var(--green-color);
+  }
 }
 @media(max-width: 1440px) {
-    .commitment {
-      padding-top: calc(30px + (100 - 30)*((100vw - 320px)/(1440 - 320)));
-      padding-bottom: calc(30px + (100 - 30)*((100vw - 320px)/(1440 - 320)));
-    }
+  .commitment {
+    padding-top: calc(30px + (100 - 30)*((100vw - 320px)/(1440 - 320)));
+    padding-bottom: calc(30px + (100 - 30)*((100vw - 320px)/(1440 - 320)));
+  }
 }
 @media(max-width: 1264px) {
     .commitment__text {
