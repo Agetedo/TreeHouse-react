@@ -14,7 +14,7 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  height: calc(100vh - 20px);//minus height reserved__text
+  height: calc(100vh - 20px);
 }
 .soon__items {
   align-self: center;
@@ -117,18 +117,18 @@
     }
 }
 @media(max-width: 1024px) {
-    .reserved__text {
-      display: none;
-    }
-    .home__link {
-      margin-top: calc(34px + (72 - 34)*((100vw - 320px)/(1024 - 320)));
-    }
+  .reserved__text {
+    display: none;
+  }
+  .home__link {
+    margin-top: calc(34px + (72 - 34)*((100vw - 320px)/(1024 - 320)));
+  }
 }
 @media(orientation: landscape) and (max-height: 480px) {
-   .soon {
-      overflow-y: scroll;
-    }
-    .soon__wrapper {
-      height: 100vh;
-    }
+  .soon {
+    overflow-y: scroll;
+  }
+  .soon__wrapper {
+    height: 100vh;
+  }
 }
