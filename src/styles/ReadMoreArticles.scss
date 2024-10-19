@@ -33,10 +33,10 @@
 }
 //---@media-read-articles-------------
 @media (hover: hover) and (pointer: fine) {
-    #readMoreButton:hover {
-      background-color: var(--green-color);
-      color: var(--white-text-color);
-    }
+  #readMoreButton:hover {
+    background-color: var(--green-color);
+    color: var(--white-text-color);
+  }
 }
 @media (hover: none) {
     #readMoreButton:active {
