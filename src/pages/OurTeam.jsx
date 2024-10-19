@@ -10,18 +10,18 @@ import PressAbout from "../components/PressAbout";
 import ChangeEmail from "../components/ChangeEmail";
 
 export default function OurTeam() {
-    return (
-        <>
-          <TeamHeading />
-          <TeamNote />
-          <TeamVision />
-          <TeamVideo />
-          <TeamMission />
-          <TeamSticker />
-          <ShopMenu />
-          <TeamChoose />
-          <PressAbout />
-          <ChangeEmail />
-        </>
-    );
+  return (
+    <>
+      <TeamHeading />
+      <TeamNote />
+      <TeamVision />
+      <TeamVideo />
+      <TeamMission />
+      <TeamSticker />
+      <ShopMenu />
+      <TeamChoose />
+      <PressAbout />
+      <ChangeEmail />
+    </>
+  );
 }
