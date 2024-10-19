@@ -65,12 +65,12 @@
     }
 }
 @media (hover: none) {
-    .rating__link:active {
+  .rating__link:active {
       opacity: 0.7;
     }
     #productReview:active {
       opacity: 0.5;
-    }
+  }
 }
 @media(max-width: 1264px) {
     .card__items {
