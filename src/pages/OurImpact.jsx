@@ -9,17 +9,17 @@ import Tend from "../components/Tend";
 import ShopMenu from "../components/ShopMenu";
 
 export default function OurImpact() {
-    return (
-        <>
-          <ShopMenu />
-          <Environment />
-          <Cotton />
-          <Commitment />
-          <Process />
-          <Champion />
-          <People />
-          <Packaging />
-          <Tend />
-        </>
-    );
+  return (
+    <>
+      <ShopMenu />
+      <Environment />
+      <Cotton />
+      <Commitment />
+      <Process />
+      <Champion />
+      <People />
+      <Packaging />
+      <Tend />
+    </>
+  );
 }
