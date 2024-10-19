@@ -35,9 +35,9 @@
 }
 //---@media-people---------------
 @media(max-width: 1440px) {
-    .people {
-      margin-top: calc(40px + (160 - 40)*((100vw - 320px)/(1440 - 320)));
-    }
+  .people {
+    margin-top: calc(40px + (160 - 40)*((100vw - 320px)/(1440 - 320)));
+  }
 }
 @media(max-width: 1264px) {
     .people__content .rubric {
