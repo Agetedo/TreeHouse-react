@@ -65,12 +65,12 @@
 }
 //---@media-latest-articles---------
 @media (hover: hover) and (pointer: fine) {
-    .latest-article__title a:hover {
-      color: var(--light-brown-color);
-    }
-    .read__link:hover {
-      opacity: 0.7;
-    }
+  .latest-article__title a:hover {
+    color: var(--light-brown-color);
+  }
+  .read__link:hover {
+    opacity: 0.7;
+  }
 }
 @media (hover: none) {
     .latest-article__title a:active {
