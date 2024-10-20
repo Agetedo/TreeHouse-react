@@ -35,4 +35,3 @@ export const shopMobile = [{
     imageSrc: "/shop-all-image.jpg",
     imageAlt: "Girl sitting on the grass",
 }];
-
