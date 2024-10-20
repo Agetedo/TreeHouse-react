@@ -163,4 +163,4 @@ export const allCategories = [{
     price: "26.00 USD",
     cotton: "cotton",
     linen: "",
-}]
+}];
