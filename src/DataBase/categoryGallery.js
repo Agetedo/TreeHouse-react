@@ -23,4 +23,4 @@ export const categoryGallery = [{
     imageSrc: "/shop-all-category-image.jpg",
     imageAlt: "Clothes and live tulips",
     linkTo: "/shop-page",
-},];
+}];
