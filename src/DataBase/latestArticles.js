@@ -31,4 +31,4 @@ export const latestArticles = [{
     readLink: "/coming-soon-page",
     linkText: "Read more",
     readLinkSrc: "/svg/shop-gallery-link-arrow.svg",
-}]
+}];
