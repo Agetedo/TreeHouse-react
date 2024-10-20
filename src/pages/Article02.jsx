@@ -22,102 +22,105 @@ const text08 = <>{"Furthermore, GOTS certification means that the fabrics used i
 const text09 = <>{"By choosing products that are GOTS certified, we're not just making a difference for workers - we're also making a difference for the environment. It's a small but meaningful way to help build a better future for our children."}</>;
 const text10 = <>{"So the next time you're shopping for clothes, take a moment to look for the GOTS label. It may not always be easy to find, but it's worth the effort. By supporting brands that prioritize GOTS certification, we can help to create a better world for everyone."}</>;
 
-const aticle02IndicatorList = article02Indicators.map(indicator =>
-    <div className="indicator" key={indicator.id}>
-      <span>{indicator.indicator}</span>
-      <p>{indicator.caption}</p>
+export default function Article02() {
+  const pointsList = article02Points.map(point =>
+    <div key={point.id} className="article-point__items">
+      <img src={point.imgSrc} alt="#" />
+      <p className="article-point__text">{point.text}</p>
     </div>
-);
-function ArticleText({ text01, text02, text03, text04, text05 }) {
-    return(
-       <div className="article-text">
-            <div className="conteiner">
-                <p className="post">{text01}</p>
-                <p className="post" id="article02Text02">{text02}</p>
-                <h3 className="article-title">{title01}</h3>
-                <p className="post" id="article02Text03">{text03}</p>
-                <p className="post">{text04}</p>
-                <div className="article-indicators__items">
-                  {aticle02IndicatorList}
-                </div>
-                <p className="post">{text05}</p>
-            </div>
-       </div> 
-    );
+  );
+  return (
+    <>
+      <ArticlePageHeading 
+        title={"From Our Children's Safety to Workers' Rights: The Revolutionary Impact of GOTS Certification in Kids Clothing Factories"}
+        imgSrc={article02Image}
+        imgAlt={"Cotton and certification mark"}
+      />
+      <ArticleText 
+        text01={text01}
+        text02={text02}
+        title01={title01}
+        text03={text03}
+        text04={text04}
+        text05={text05}
+      />
+      <PostImage01 
+        imgAlt={"A man sews on a sewing machine in the workshop"}
+      />
+      <PointsTitle 
+        title={title02}
+        text={text06}
+      />
+      <ArticlePoints list={pointsList} />
+      <PostTitle 
+        title={title03}
+        text06={text07}
+        text07={text08}
+        text08={text09}
+        text09={text10}
+      />
+      <LatestArticles />
+      <Tend />
+    </>
+  );
 }
-function PostImage01({ imgAlt }) {
-    return(
-        <div className="post__image">
-            <div className="conteiner">
-                <img src={article02PageImage01} alt={imgAlt} />
-            </div>
+
+const aticle02IndicatorList = article02Indicators.map(indicator =>
+  <div className="indicator" key={indicator.id}>
+    <span>{indicator.indicator}</span>
+    <p>{indicator.caption}</p>
+  </div>
+);
+
+function ArticleText({ text01, text02, text03, text04, text05 }) {
+  return(
+    <div className="article-text">
+      <div className="conteiner">
+        <p className="post">{text01}</p>
+        <p className="post" id="article02Text02">{text02}</p>
+        <h3 className="article-title">{title01}</h3>
+        <p className="post" id="article02Text03">{text03}</p>
+        <p className="post">{text04}</p>
+        <div className="article-indicators__items">
+          {aticle02IndicatorList}
         </div>
-    );
+        <p className="post">{text05}</p>
+      </div>
+    </div> 
+  );
+}
+
+function PostImage01({ imgAlt }) {
+  return(
+    <div className="post__image">
+      <div className="conteiner">
+        <img src={article02PageImage01} alt={imgAlt} />
+      </div>
+    </div>
+  );
 }
 
 function PostTitle({ title, text06, text07, text08, text09 }) {
-    return(
-        <div className="post-title">
-            <div className="conteiner">
-                <h3 className="post__title">{title}</h3>
-                <p className="post">{text06}</p>
-                <p className="post">{text07}</p>
-                <p className="post" id="article02Text08">{text08}</p>
-                <p className="post" id="article02Text09">{text09}</p>
-            </div>
-        </div>
-    );
-}
-function PointsTitle({ title, text }) {
-    return(
-        <div className="points-title">
-            <div className="conteiner">
-                <h3 className="points__title">{title}</h3>
-                <p className="points__post">{text}</p>
-            </div>
-        </div>
-    );
+  return(
+    <div className="post-title">
+      <div className="conteiner">
+        <h3 className="post__title">{title}</h3>
+        <p className="post">{text06}</p>
+        <p className="post">{text07}</p>
+        <p className="post" id="article02Text08">{text08}</p>
+        <p className="post" id="article02Text09">{text09}</p>
+      </div>
+    </div>
+  );
 }
 
-export default function Article02() {
-    const pointsList = article02Points.map(point =>
-        <div key={point.id} className="article-point__items">
-            <img src={point.imgSrc} alt="#" />
-            <p className="article-point__text">{point.text}</p>
-        </div>
-    );
-    return (
-        <>
-            <ArticlePageHeading 
-              title={"From Our Children's Safety to Workers' Rights: The Revolutionary Impact of GOTS Certification in Kids Clothing Factories"}
-              imgSrc={article02Image}
-              imgAlt={"Cotton and certification mark"}
-            />
-            <ArticleText 
-              text01={text01}
-              text02={text02}
-              title01={title01}
-              text03={text03}
-              text04={text04}
-              text05={text05}
-            />
-            <PostImage01 
-              imgAlt={"A man sews on a sewing machine in the workshop"}
-            />
-            <PointsTitle 
-              title={title02}
-              text={text06}
-            />
-            <ArticlePoints list={pointsList} />
-            <PostTitle 
-              title={title03}
-              text06={text07}
-              text07={text08}
-              text08={text09}
-              text09={text10}
-            />
-            <LatestArticles />
-            <Tend />
-        </>
-    );
+function PointsTitle({ title, text }) {
+  return(
+    <div className="points-title">
+      <div className="conteiner">
+        <h3 className="points__title">{title}</h3>
+        <p className="points__post">{text}</p>
+      </div>
+    </div>
+  );
 }
