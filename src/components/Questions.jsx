@@ -1,9 +1,9 @@
 import {
-    Accordion,
-    AccordionItem,
-    AccordionItemHeading,
-    AccordionItemButton,
-    AccordionItemPanel,
+  Accordion,
+  AccordionItem,
+  AccordionItemHeading,
+  AccordionItemButton,
+  AccordionItemPanel,
 } from "react-accessible-accordion";
 import ellipsePoint from "/svg/conditions-ellipse-point.svg";
 import questionsLabel01 from "/vision-label-image.png";
@@ -11,7 +11,7 @@ import questionsLabel02 from "/questions-label-image.png";
 import "..//styles/Questions.scss";
 
 function AccordionTitle({ title }) {
-    return( <h3 className="accordion__title">{title}</h3> );
+  return( <h3 className="accordion__title">{title}</h3> );
 }
 
 const shippingText = <>{"We offer free shipping within the continental US on orders of $150+. Orders shipping to Alaska, Hawaii, or outside of the US are excluded from free shipping."}</>;
@@ -33,193 +33,193 @@ const stockText = <>{"In order to limit the potential for textile waste, we manu
 const sizeText = <>{"If in between, we always recommend choosing a bigger size for your child. They're always growing and are sure to fit the next size up soon. Note, as well, that on each product's page is listed if a garment tends to run small or large."}</>;
 
 export default function Questions({ caption }) {
-    return (
-        <div className="questions">
-            <img id="questionsLabel01" src={questionsLabel01} alt="#" />
-            <img id="questionsLabel02" src={questionsLabel02} alt="#" />
-            <div className="conteiner">
+  return (
+    <div className="questions">
+      <img id="questionsLabel01" src={questionsLabel01} alt="#" />
+      <img id="questionsLabel02" src={questionsLabel02} alt="#" />
+      <div className="conteiner">
 
-                <AccordionTitle title={"Shipping/Returns/Exchanges"}/>
-                <Accordion allowMultipleExpanded={true} allowZeroExpanded={true}>
-                    <AccordionItem>
-                        <AccordionItemHeading>
-                            <AccordionItemButton>{caption="Do you offer free shipping?"}</AccordionItemButton>
-                        </AccordionItemHeading>
-                        <AccordionItemPanel>
-                            <div className="question">
-                              <img src={ellipsePoint} alt="#" />
-                              <p>{shippingText}</p>
-                            </div>
-                        </AccordionItemPanel>
-                    </AccordionItem>
+        <AccordionTitle title={"Shipping/Returns/Exchanges"}/>
+        <Accordion allowMultipleExpanded={true} allowZeroExpanded={true}>
+          <AccordionItem>
+            <AccordionItemHeading>
+              <AccordionItemButton>{caption="Do you offer free shipping?"}</AccordionItemButton>
+            </AccordionItemHeading>
+            <AccordionItemPanel>
+              <div className="question">
+                <img src={ellipsePoint} alt="#" />
+                <p>{shippingText}</p>
+              </div>
+            </AccordionItemPanel>
+          </AccordionItem>
 
-                    <AccordionItem>
-                        <AccordionItemHeading>
-                            <AccordionItemButton>{caption="Do you ship outside the US?"}</AccordionItemButton>
-                        </AccordionItemHeading>
-                        <AccordionItemPanel>
-                            <div className="question">
-                              <img src={ellipsePoint} alt="#" />
-                              <p>{outsideText01}</p>
-                            </div>
-                            <div className="question">
-                              <img src={ellipsePoint} alt="#" />
-                              <p>{outsideText02}</p>
-                            </div>
-                        </AccordionItemPanel>
-                    </AccordionItem>
+          <AccordionItem>
+            <AccordionItemHeading>
+              <AccordionItemButton>{caption="Do you ship outside the US?"}</AccordionItemButton>
+            </AccordionItemHeading>
+            <AccordionItemPanel>
+              <div className="question">
+                <img src={ellipsePoint} alt="#" />
+                <p>{outsideText01}</p>
+              </div>
+              <div className="question">
+                <img src={ellipsePoint} alt="#" />
+                <p>{outsideText02}</p>
+              </div>
+            </AccordionItemPanel>
+          </AccordionItem>
 
-                    <AccordionItem>
-                        <AccordionItemHeading>
-                            <AccordionItemButton>{caption="How can I do an exchange or return?"}</AccordionItemButton>
-                        </AccordionItemHeading>
-                        <AccordionItemPanel>
-                            <div className="question">
-                              <img src={ellipsePoint} alt="#" />
-                              <p>{returnText}</p>
-                            </div>
-                        </AccordionItemPanel>
-                    </AccordionItem>
+          <AccordionItem>
+            <AccordionItemHeading>
+              <AccordionItemButton>{caption="How can I do an exchange or return?"}</AccordionItemButton>
+            </AccordionItemHeading>
+            <AccordionItemPanel>
+              <div className="question">
+                <img src={ellipsePoint} alt="#" />
+                <p>{returnText}</p>
+              </div>
+            </AccordionItemPanel>
+          </AccordionItem>
 
-                    <AccordionItem>
-                        <AccordionItemHeading>
-                            <AccordionItemButton>{caption="How soon will my order ship?"}</AccordionItemButton>
-                        </AccordionItemHeading>
-                        <AccordionItemPanel>
-                            <div className="question">
-                              <img src={ellipsePoint} alt="#" />
-                              <p>{orderText}</p>
-                            </div>
-                        </AccordionItemPanel>
-                    </AccordionItem>
+          <AccordionItem>
+            <AccordionItemHeading>
+              <AccordionItemButton>{caption="How soon will my order ship?"}</AccordionItemButton>
+            </AccordionItemHeading>
+            <AccordionItemPanel>
+              <div className="question">
+                <img src={ellipsePoint} alt="#" />
+                <p>{orderText}</p>
+              </div>
+            </AccordionItemPanel>
+          </AccordionItem>
 
-                    <AccordionItem>
-                        <AccordionItemHeading>
-                            <AccordionItemButton>{caption="How will my items be shipped?"}</AccordionItemButton>
-                        </AccordionItemHeading>
-                        <AccordionItemPanel>
-                            <div className="question">
-                              <img src={ellipsePoint} alt="#" />
-                              <p>{shippedText01}</p>
-                            </div>
-                            <div className="question">
-                              <img src={ellipsePoint} alt="#" />
-                              <p>{shippedText02}</p>
-                            </div>
-                            <div className="question">
-                              <img src={ellipsePoint} alt="#" />
-                              <p>{shippedText03}</p>
-                            </div>
-                        </AccordionItemPanel>
-                    </AccordionItem>
+          <AccordionItem>
+            <AccordionItemHeading>
+              <AccordionItemButton>{caption="How will my items be shipped?"}</AccordionItemButton>
+            </AccordionItemHeading>
+            <AccordionItemPanel>
+              <div className="question">
+                <img src={ellipsePoint} alt="#" />
+                <p>{shippedText01}</p>
+              </div>
+              <div className="question">
+                <img src={ellipsePoint} alt="#" />
+                <p>{shippedText02}</p>
+              </div>
+              <div className="question">
+                <img src={ellipsePoint} alt="#" />
+                <p>{shippedText03}</p>
+              </div>
+            </AccordionItemPanel>
+          </AccordionItem>
 
-                    <AccordionItem>
-                        <AccordionItemHeading>
-                            <AccordionItemButton>{caption="Can I track my order?"}</AccordionItemButton>
-                        </AccordionItemHeading>
-                        <AccordionItemPanel>
-                            <div className="question">
-                              <img src={ellipsePoint} alt="#" />
-                              <p>{trackText}</p>
-                            </div>
-                        </AccordionItemPanel>
-                    </AccordionItem>
+          <AccordionItem>
+            <AccordionItemHeading>
+              <AccordionItemButton>{caption="Can I track my order?"}</AccordionItemButton>
+            </AccordionItemHeading>
+            <AccordionItemPanel>
+              <div className="question">
+                <img src={ellipsePoint} alt="#" />
+                <p>{trackText}</p>
+              </div>
+            </AccordionItemPanel>
+          </AccordionItem>
 
-                    <AccordionItem>
-                        <AccordionItemHeading>
-                            <AccordionItemButton>{caption="My shipment was damaged/missing an item. Who should I contact?"}</AccordionItemButton>
-                        </AccordionItemHeading>
-                        <AccordionItemPanel>
-                            <div className="question">
-                              <img src={ellipsePoint} alt="#" />
-                              <p>{shipmentText}</p>
-                            </div>
-                        </AccordionItemPanel>
-                    </AccordionItem>
-                </Accordion>
+          <AccordionItem>
+            <AccordionItemHeading>
+              <AccordionItemButton>{caption="My shipment was damaged/missing an item. Who should I contact?"}</AccordionItemButton>
+            </AccordionItemHeading>
+            <AccordionItemPanel>
+              <div className="question">
+                <img src={ellipsePoint} alt="#" />
+                <p>{shipmentText}</p>
+              </div>
+            </AccordionItemPanel>
+          </AccordionItem>
+        </Accordion>
 
-                <AccordionTitle title={"Clothing Production"}/>
-                <Accordion allowMultipleExpanded={true} allowZeroExpanded={true}>
-                    <AccordionItem>
-                        <AccordionItemHeading>
-                            <AccordionItemButton>{caption="Who designs your clothing?"}</AccordionItemButton>
-                        </AccordionItemHeading>
-                        <AccordionItemPanel>
-                            <div className="question">
-                              <img src={ellipsePoint} alt="#" />
-                              <p>{designsText}</p>
-                            </div>
-                        </AccordionItemPanel>
-                    </AccordionItem>
+        <AccordionTitle title={"Clothing Production"}/>
+        <Accordion allowMultipleExpanded={true} allowZeroExpanded={true}>
+          <AccordionItem>
+            <AccordionItemHeading>
+              <AccordionItemButton>{caption="Who designs your clothing?"}</AccordionItemButton>
+            </AccordionItemHeading>
+            <AccordionItemPanel>
+              <div className="question">
+                <img src={ellipsePoint} alt="#" />
+                <p>{designsText}</p>
+              </div>
+            </AccordionItemPanel>
+          </AccordionItem>
 
-                    <AccordionItem>
-                        <AccordionItemHeading>
-                            <AccordionItemButton>{caption="Where is your clothing manufactured?"}</AccordionItemButton>
-                        </AccordionItemHeading>
-                        <AccordionItemPanel>
-                            <div className="question">
-                              <img src={ellipsePoint} alt="#" />
-                              <p>{manufacturedText01}</p>
-                            </div>
-                            <div className="question">
-                              <img src={ellipsePoint} alt="#" />
-                              <p>{manufacturedText02}</p>
-                            </div>
-                        </AccordionItemPanel>
-                    </AccordionItem>
-                </Accordion>
+          <AccordionItem>
+            <AccordionItemHeading>
+              <AccordionItemButton>{caption="Where is your clothing manufactured?"}</AccordionItemButton>
+            </AccordionItemHeading>
+            <AccordionItemPanel>
+              <div className="question">
+                <img src={ellipsePoint} alt="#" />
+                <p>{manufacturedText01}</p>
+              </div>
+              <div className="question">
+                <img src={ellipsePoint} alt="#" />
+                <p>{manufacturedText02}</p>
+              </div>
+            </AccordionItemPanel>
+          </AccordionItem>
+        </Accordion>
 
-                <AccordionTitle title={"Products / Sizing"}/>
-                <Accordion allowMultipleExpanded={true} allowZeroExpanded={true}>
-                    <AccordionItem>
-                        <AccordionItemHeading>
-                            <AccordionItemButton>{caption="How does your clothing fit?"}</AccordionItemButton>
-                        </AccordionItemHeading>
-                        <AccordionItemPanel>
-                            <div className="question">
-                              <img src={ellipsePoint} alt="#" />
-                              <p>{fitText}</p>
-                            </div>
-                        </AccordionItemPanel>
-                    </AccordionItem>
+        <AccordionTitle title={"Products / Sizing"}/>
+        <Accordion allowMultipleExpanded={true} allowZeroExpanded={true}>
+          <AccordionItem>
+            <AccordionItemHeading>
+              <AccordionItemButton>{caption="How does your clothing fit?"}</AccordionItemButton>
+            </AccordionItemHeading>
+            <AccordionItemPanel>
+              <div className="question">
+                <img src={ellipsePoint} alt="#" />
+                <p>{fitText}</p>
+              </div>
+            </AccordionItemPanel>
+          </AccordionItem>
 
-                    <AccordionItem>
-                        <AccordionItemHeading>
-                            <AccordionItemButton>{caption="Which fabrics do you use in your collections?"}</AccordionItemButton>
-                        </AccordionItemHeading>
-                        <AccordionItemPanel>
-                            <div className="question">
-                              <img src={ellipsePoint} alt="#" />
-                              <p>{fabricsText}</p>
-                            </div>
-                        </AccordionItemPanel>
-                    </AccordionItem>
+          <AccordionItem>
+            <AccordionItemHeading>
+              <AccordionItemButton>{caption="Which fabrics do you use in your collections?"}</AccordionItemButton>
+            </AccordionItemHeading>
+            <AccordionItemPanel>
+              <div className="question">
+                <img src={ellipsePoint} alt="#" />
+                <p>{fabricsText}</p>
+              </div>
+            </AccordionItemPanel>
+          </AccordionItem>
 
-                    <AccordionItem>
-                        <AccordionItemHeading>
-                            <AccordionItemButton>{caption="A product I love is out of stock! Will you be getting more in soon?"}</AccordionItemButton>
-                        </AccordionItemHeading>
-                        <AccordionItemPanel>
-                            <div className="question">
-                              <img src={ellipsePoint} alt="#" />
-                              <p>{stockText}</p>
-                            </div>
-                        </AccordionItemPanel>
-                    </AccordionItem>
+          <AccordionItem>
+            <AccordionItemHeading>
+              <AccordionItemButton>{caption="A product I love is out of stock! Will you be getting more in soon?"}</AccordionItemButton>
+            </AccordionItemHeading>
+            <AccordionItemPanel>
+              <div className="question">
+                <img src={ellipsePoint} alt="#" />
+                <p>{stockText}</p>
+              </div>
+            </AccordionItemPanel>
+          </AccordionItem>
 
-                    <AccordionItem>
-                        <AccordionItemHeading>
-                            <AccordionItemButton>{caption="My child seems to be right in between sizes. What size do you recommend I choose?"}</AccordionItemButton>
-                        </AccordionItemHeading>
-                        <AccordionItemPanel>
-                            <div className="question">
-                              <img src={ellipsePoint} alt="#" />
-                              <p>{sizeText}</p>
-                            </div>
-                        </AccordionItemPanel>
-                    </AccordionItem>
-                </Accordion>
-            </div>
-        </div>
-    );
+          <AccordionItem>
+            <AccordionItemHeading>
+              <AccordionItemButton>{caption="My child seems to be right in between sizes. What size do you recommend I choose?"}</AccordionItemButton>
+            </AccordionItemHeading>
+            <AccordionItemPanel>
+              <div className="question">
+                <img src={ellipsePoint} alt="#" />
+                <p>{sizeText}</p>
+              </div>
+            </AccordionItemPanel>
+          </AccordionItem>
+        </Accordion>
+      </div>
+    </div>
+  );
 }
