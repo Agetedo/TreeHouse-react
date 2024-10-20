@@ -19,89 +19,92 @@ const title04 = <>{"Top tips for creating a capsule wardrobe for your child"}</>
 const text06 = <>{"A capsule wardrobe saves not only energy and time, but also money. A thoughtful capsule is an antidote to unsuccessful purchases, returns and pointless spending."}</>;
 const text07 = <>{"At the very least you'll have less stress associated with getting your kids dressed in the morning. You will have to do less laundry because the children will have less clothes and they will not have the physical ability to change sets 5 times a day. This teaches frugality, by the way too!"}</>;
 
-function ArticleText({ text01 }) {
-    return(
-       <div className="article-text">
-            <div className="conteiner">
-                <p className="post" id="article05Text01">{text01}</p>
-            </div>
-       </div> 
-    );
-}
-function PostTitle({ title, text02, text03 }) {
-    return(
-        <div className="post-title">
-            <div className="conteiner">
-                <h3 className="post__title">{title}</h3>
-                <p className="post">{text02}</p>
-                <p className="post">{text03}</p>
-            </div>
-        </div>
-    );
-}
-function PostImage01({ imgAlt }) {
-    return(
-        <div className="post__image">
-            <div className="conteiner">
-                <img src={article05PageImage01} alt={imgAlt} />
-            </div>
-        </div>
-    );
-}
-function PointsTitle({ title, text }) {
-    return(
-        <div className="points-title">
-            <div className="conteiner">
-                <h3 className="points__title">{title}</h3>
-                <p className="points__post">{text}</p>
-            </div>
-        </div>
-    );
+export default function Article05() {
+  const pointsList = article05Points.map(point =>
+    <div key={point.id} className="article-point__items">
+      <img src={point.imgSrc} alt="#" />
+      <p className="article-point__text">{point.text}</p>
+    </div>
+  );
+  return (
+    <>
+      <ArticlePageHeading 
+        title={"Creating a Sustainable and Stress-Free Wardrobe for Your Kids: The Ultimate Guide to Building a Capsule Wardrobe"}
+        imgSrc={article05Image}
+        imgAlt={"Girl in a shelf of dandelions"}
+      />
+      <ArticleText
+        text01={text01} 
+      />
+      <PostTitle 
+        title={title01}
+        text02={text02}
+        text03={text03}
+      /> 
+      <PostTitle 
+        title={title02}
+        text02={text04}
+      />
+      <PostImage01
+        imgAlt={"Children sitting under a tree"} 
+      />
+      <PostTitle 
+        title={title03}
+        text02={text05}
+      />
+      <PointsTitle 
+        title={title04}
+        text={text06}
+      />
+      <ArticlePoints list={pointsList} />
+      <ArticleText
+        text01={text07} 
+      />
+      <LatestArticles />
+      <Tend />
+    </>
+  );
 }
 
-export default function Article05() {
-    const pointsList = article05Points.map(point =>
-        <div key={point.id} className="article-point__items">
-            <img src={point.imgSrc} alt="#" />
-            <p className="article-point__text">{point.text}</p>
-        </div>
-    );
-    return (
-        <>
-            <ArticlePageHeading 
-              title={"Creating a Sustainable and Stress-Free Wardrobe for Your Kids: The Ultimate Guide to Building a Capsule Wardrobe"}
-              imgSrc={article05Image}
-              imgAlt={"Girl in a shelf of dandelions"}
-            />
-            <ArticleText
-              text01={text01} 
-            />
-            <PostTitle 
-              title={title01}
-              text02={text02}
-              text03={text03}
-            /> 
-            <PostTitle 
-              title={title02}
-              text02={text04}
-            />
-            <PostImage01
-              imgAlt={"Children sitting under a tree"} 
-            />
-            <PostTitle 
-              title={title03}
-              text02={text05}
-            />
-            <PointsTitle 
-              title={title04}
-              text={text06}
-            />
-            <ArticlePoints list={pointsList} />
-            <ArticleText
-              text01={text07} 
-            />
-            <LatestArticles />
-            <Tend />
-        </>
-    );
+function ArticleText({ text01 }) {
+  return(
+    <div className="article-text">
+      <div className="conteiner">
+        <p className="post" id="article05Text01">{text01}</p>
+      </div>
+    </div> 
+  );
+}
+
+function PostTitle({ title, text02, text03 }) {
+  return(
+    <div className="post-title">
+      <div className="conteiner">
+        <h3 className="post__title">{title}</h3>
+        <p className="post">{text02}</p>
+        <p className="post">{text03}</p>
+      </div>
+    </div>
+  );
+}
+
+function PostImage01({ imgAlt }) {
+  return(
+    <div className="post__image">
+      <div className="conteiner">
+        <img src={article05PageImage01} alt={imgAlt} />
+      </div>
+    </div>
+  );
+}
+
+function PointsTitle({ title, text }) {
+  return(
+    <div className="points-title">
+      <div className="conteiner">
+        <h3 className="points__title">{title}</h3>
+        <p className="points__post">{text}</p>
+      </div>
+    </div>
+  );
 }
