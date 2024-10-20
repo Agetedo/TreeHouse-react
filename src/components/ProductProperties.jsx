@@ -1,9 +1,9 @@
 import {
-    Accordion,
-    AccordionItem,
-    AccordionItemHeading,
-    AccordionItemButton,
-    AccordionItemPanel,
+  Accordion,
+  AccordionItem,
+  AccordionItemHeading,
+  AccordionItemButton,
+  AccordionItemPanel,
 } from "react-accessible-accordion";
 import ellipsePoint from "/svg/conditions-ellipse-point.svg";
 import "..//styles/ProductProperties.scss";
@@ -21,88 +21,88 @@ const shippingText02 = <>{"We offer standard rates for both domestic and interna
 
 
 export default function ProductProperties({ caption }) {
-    return (
-        <div className="product-properties">
-            <Accordion allowMultipleExpanded={true} allowZeroExpanded={true}>
-                <AccordionItem>
-                    <AccordionItemHeading>
-                        <AccordionItemButton>{caption="Composition"}</AccordionItemButton>
-                    </AccordionItemHeading>
-                    <AccordionItemPanel>
-                        <div className="content__composition">
-                          <img src={ellipsePoint} alt="#" />
-                          <p>{compositionText01}</p>
-                        </div>
-                    </AccordionItemPanel>
-                </AccordionItem>
+  return (
+    <div className="product-properties">
+      <Accordion allowMultipleExpanded={true} allowZeroExpanded={true}>
+        <AccordionItem>
+          <AccordionItemHeading>
+            <AccordionItemButton>{caption="Composition"}</AccordionItemButton>
+          </AccordionItemHeading>
+          <AccordionItemPanel>
+            <div className="content__composition">
+              <img src={ellipsePoint} alt="#" />
+              <p>{compositionText01}</p>
+            </div>
+          </AccordionItemPanel>
+        </AccordionItem>
 
-                <AccordionItem>
-                    <AccordionItemHeading>
-                        <AccordionItemButton>{caption="Description"}</AccordionItemButton>
-                    </AccordionItemHeading>
-                    <AccordionItemPanel>
-                        <div className="content__composition">
-                          <img src={ellipsePoint} alt="#" />
-                          <p>{descriptionText01}</p>
-                        </div>
-                        <div className="content__composition">
-                          <img src={ellipsePoint} alt="#" />
-                          <p>{descriptionText02}</p>
-                        </div>
-                        <div className="content__composition">
-                          <p>{descriptionText03}</p>
-                        </div>
-                    </AccordionItemPanel>
-                </AccordionItem>
+        <AccordionItem>
+          <AccordionItemHeading>
+            <AccordionItemButton>{caption="Description"}</AccordionItemButton>
+          </AccordionItemHeading>
+          <AccordionItemPanel>
+            <div className="content__composition">
+              <img src={ellipsePoint} alt="#" />
+              <p>{descriptionText01}</p>
+            </div>
+            <div className="content__composition">
+              <img src={ellipsePoint} alt="#" />
+              <p>{descriptionText02}</p>
+            </div>
+            <div className="content__composition">
+              <p>{descriptionText03}</p>
+            </div>
+          </AccordionItemPanel>
+        </AccordionItem>
 
-                <AccordionItem>
-                    <AccordionItemHeading>
-                        <AccordionItemButton>{caption="Features"}</AccordionItemButton>
-                    </AccordionItemHeading>
-                    <AccordionItemPanel>
-                        <div className="content__composition">
-                          <img src={ellipsePoint} alt="#" />
-                          <p>{featuresText01}</p>
-                        </div>
-                        <div className="content__composition">
-                          <img src={ellipsePoint} alt="#" />
-                          <p>{featuresText02}</p>
-                        </div>
-                        <div className="content__composition">
-                          <img src={ellipsePoint} alt="#" />
-                          <p>{featuresText03}</p>
-                        </div>
-                    </AccordionItemPanel>
-                </AccordionItem>
+        <AccordionItem>
+          <AccordionItemHeading>
+            <AccordionItemButton>{caption="Features"}</AccordionItemButton>
+          </AccordionItemHeading>
+          <AccordionItemPanel>
+            <div className="content__composition">
+              <img src={ellipsePoint} alt="#" />
+              <p>{featuresText01}</p>
+            </div>
+            <div className="content__composition">
+              <img src={ellipsePoint} alt="#" />
+              <p>{featuresText02}</p>
+            </div>
+            <div className="content__composition">
+              <img src={ellipsePoint} alt="#" />
+              <p>{featuresText03}</p>
+            </div>
+          </AccordionItemPanel>
+        </AccordionItem>
 
-                <AccordionItem>
-                    <AccordionItemHeading>
-                        <AccordionItemButton>{caption="Clothing Care"}</AccordionItemButton>
-                    </AccordionItemHeading>
-                    <AccordionItemPanel>
-                        <div className="content__composition">
-                          <img src={ellipsePoint} alt="#" />
-                          <p>{clothingText01}</p>
-                        </div>
-                    </AccordionItemPanel>
-                </AccordionItem>
+        <AccordionItem>
+          <AccordionItemHeading>
+            <AccordionItemButton>{caption="Clothing Care"}</AccordionItemButton>
+          </AccordionItemHeading>
+          <AccordionItemPanel>
+            <div className="content__composition">
+              <img src={ellipsePoint} alt="#" />
+              <p>{clothingText01}</p>
+            </div>
+          </AccordionItemPanel>
+        </AccordionItem>
 
-                <AccordionItem>
-                    <AccordionItemHeading>
-                        <AccordionItemButton>{caption="Shipping and Delivery"}</AccordionItemButton>
-                    </AccordionItemHeading>
-                    <AccordionItemPanel>
-                        <div className="content__composition">
-                          <img src={ellipsePoint} alt="#" />
-                          <p>{shippingText01}</p>
-                        </div>
-                        <div className="content__composition">
-                          <img src={ellipsePoint} alt="#" />
-                          <p>{shippingText02}</p>
-                        </div>
-                    </AccordionItemPanel>
-                </AccordionItem>
-            </Accordion>
-        </div>
-    );
+        <AccordionItem>
+          <AccordionItemHeading>
+            <AccordionItemButton>{caption="Shipping and Delivery"}</AccordionItemButton>
+          </AccordionItemHeading>
+          <AccordionItemPanel>
+            <div className="content__composition">
+              <img src={ellipsePoint} alt="#" />
+              <p>{shippingText01}</p>
+            </div>
+            <div className="content__composition">
+              <img src={ellipsePoint} alt="#" />
+              <p>{shippingText02}</p>
+            </div>
+          </AccordionItemPanel>
+        </AccordionItem>
+      </Accordion>
+    </div>
+  );
 }
