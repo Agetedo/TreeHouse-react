@@ -23,6 +23,47 @@ const title03 = <>{"Why Switch to Sustainable Clothing?"}</>;
 const text09 = <>{"Apart from the environmental and social benefits, sustainable clothing can also save you money in the long run. While sustainable clothing may have a higher upfront cost, they are designed to last longer and are made from higher quality materials than fast fashion items. This means that you'll spend less money over time replacing worn-out items, ultimately saving you money. To make the most of your investment, consider the cost per wear of each item when deciding which pieces to purchase."}</>;
 const text10 = <>{"Choosing to purchase sustainable clothing is a small but powerful way to make a positive impact on the environment and support the fashion industry's shift towards more sustainable practices. By looking for sustainable certifications and labels and choosing eco-friendly fabrics, we can reduce waste and pollution, support fair labor practices, and save money in the long run. Remember, sustainability is a journey, so take it one step at a time and enjoy the process of making a positive change towards a more sustainable lifestyle."}</>;
 
+export default function Article01() {
+  const articleImageList = articleGallery.map(image => 
+    <SwiperSlide key={image.id} className="swiper-slide">
+      <img src={image.imageSrc} alt={image.imageAlt} />
+    </SwiperSlide>
+  );
+  return (
+    <>
+      <ArticlePageHeading 
+        title={"Start Your Sustainable Fashion Journey: Practical Tips for Everyone"}
+        imgSrc={article01Image}
+        imgAlt={"Woman choosing clothes in showroom"}
+      />
+      <ArticleText 
+        text01={text01}
+        text02={text02}
+        text03={text03}
+        text04={text04}
+        title01={title01}
+        text05={text05}
+        text06={text06}
+      />
+      <PostImage01 
+        imgAlt={"Standards labels on clothing labels"}
+      />
+      <PostTitle 
+        title={title02}
+        text07={text07}
+        text08={text08}
+      />
+      <ArticleGallery list={articleImageList}/>
+      <PostTitle 
+        title={title03}
+        text07={text09}
+        text08={text10}
+      />
+      <LatestArticles />
+      <Tend />
+    </>
+  );
+}
 const aticle01IndicatorList = article01Indicators.map(indicator =>
   <div className="indicator" key={indicator.id}>
     <span>{indicator.indicator}</span>
@@ -68,47 +109,5 @@ function PostTitle({ title, text07, text08 }) {
         <p className="post">{text08}</p>
       </div>
     </div>
-  );
-}
-
-export default function Article01() {
-  const articleImageList = articleGallery.map(image => 
-    <SwiperSlide key={image.id} className="swiper-slide">
-      <img src={image.imageSrc} alt={image.imageAlt} />
-    </SwiperSlide>
-  );
-  return (
-    <>
-      <ArticlePageHeading 
-        title={"Start Your Sustainable Fashion Journey: Practical Tips for Everyone"}
-        imgSrc={article01Image}
-        imgAlt={"Woman choosing clothes in showroom"}
-      />
-      <ArticleText 
-        text01={text01}
-        text02={text02}
-        text03={text03}
-        text04={text04}
-        title01={title01}
-        text05={text05}
-        text06={text06}
-      />
-            <PostImage01 
-              imgAlt={"Standards labels on clothing labels"}
-            />
-            <PostTitle 
-              title={title02}
-              text07={text07}
-              text08={text08}
-            />
-            <ArticleGallery list={articleImageList}/>
-            <PostTitle 
-              title={title03}
-              text07={text09}
-              text08={text10}
-            />
-            <LatestArticles />
-           <Tend />
-    </>
   );
 }
