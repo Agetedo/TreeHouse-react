@@ -1,9 +1,9 @@
 import {
-    Accordion,
-    AccordionItem,
-    AccordionItemHeading,
-    AccordionItemButton,
-    AccordionItemPanel,
+  Accordion,
+  AccordionItem,
+  AccordionItemHeading,
+  AccordionItemButton,
+  AccordionItemPanel,
 } from "react-accessible-accordion";
 import ellipsePoint from "/svg/conditions-ellipse-point.svg";
 import "..//styles/Conditions.scss";
@@ -17,56 +17,56 @@ const whatElseText03 = <>{"If the denomination you would like is not available h
 const whatElseText04 = <>{"Purchases will be deducted from the Gift Card until the value reaches zero. To check your balance, please email us at info@mygreenkid.com"}</>;
 
 export default function Conditions({ caption }) {
-    return (
-        <div className="conditions">
-            <div className="conteiner">
+  return (
+    <div className="conditions">
+      <div className="conteiner">
 
-                <Accordion allowMultipleExpanded={true} allowZeroExpanded={true}>
-                    <AccordionItem>
-                        <AccordionItemHeading>
-                            <AccordionItemButton>{caption="IMPORTANT"}</AccordionItemButton>
-                        </AccordionItemHeading>
-                        <AccordionItemPanel>
-                            <div className="content__composition">
-                              <img src={ellipsePoint} alt="#" />
-                              <p>{importantText01}</p>
-                            </div>
-                            <div className="content__composition">
-                              <img src={ellipsePoint} alt="#" />
-                             <p>{importantText02}</p>
-                            </div>
-                            <div className="content__composition">
-                              <img src={ellipsePoint} alt="#" />
-                              <p>{importantText03}</p>
-                            </div>
-                        </AccordionItemPanel>
-                    </AccordionItem>
+        <Accordion allowMultipleExpanded={true} allowZeroExpanded={true}>
+          <AccordionItem>
+            <AccordionItemHeading>
+              <AccordionItemButton>{caption="IMPORTANT"}</AccordionItemButton>
+            </AccordionItemHeading>
+            <AccordionItemPanel>
+              <div className="content__composition">
+                <img src={ellipsePoint} alt="#" />
+                <p>{importantText01}</p>
+              </div>
+              <div className="content__composition">
+                <img src={ellipsePoint} alt="#" />
+                <p>{importantText02}</p>
+              </div>
+              <div className="content__composition">
+                <img src={ellipsePoint} alt="#" />
+                <p>{importantText03}</p>
+              </div>
+            </AccordionItemPanel>
+          </AccordionItem>
 
-                    <AccordionItem>
-                        <AccordionItemHeading>
-                            <AccordionItemButton>{caption="WHAY ELSE ?"}</AccordionItemButton>
-                        </AccordionItemHeading>
-                        <AccordionItemPanel>
-                            <div className="content__composition">
-                              <img src={ellipsePoint} alt="#" />
-                              <p>{whatElseText01}</p>
-                            </div>
-                            <div className="content__composition">
-                              <img src={ellipsePoint} alt="#" />
-                              <p>{whatElseText02}</p>
-                            </div>
-                            <div className="content__composition">
-                              <img src={ellipsePoint} alt="#" />
-                              <p>{whatElseText03}</p>
-                            </div>
-                            <div className="content__composition">
-                              <img src={ellipsePoint} alt="#" />
-                              <p>{whatElseText04}</p>
-                            </div>
-                        </AccordionItemPanel>
-                    </AccordionItem>
-                </Accordion>
-            </div>
-        </div>
-    );
+          <AccordionItem>
+            <AccordionItemHeading>
+              <AccordionItemButton>{caption="WHAY ELSE ?"}</AccordionItemButton>
+            </AccordionItemHeading>
+            <AccordionItemPanel>
+              <div className="content__composition">
+                <img src={ellipsePoint} alt="#" />
+                <p>{whatElseText01}</p>
+              </div>
+              <div className="content__composition">
+                <img src={ellipsePoint} alt="#" />
+                <p>{whatElseText02}</p>
+              </div>
+              <div className="content__composition">
+                <img src={ellipsePoint} alt="#" />
+                <p>{whatElseText03}</p>
+              </div>
+              <div className="content__composition">
+                <img src={ellipsePoint} alt="#" />
+                <p>{whatElseText04}</p>
+              </div>
+            </AccordionItemPanel>
+          </AccordionItem>
+        </Accordion>
+      </div>
+    </div>
+  );
 }
