@@ -14,58 +14,59 @@ const text04 = <>{"It's important to consider the potential risks of synthetic f
 const text05 = <>{"As caring parents, we all want what's best for our children, regardless of our background or income. While natural and organic fabrics may seem more expensive at first, their benefits far outweigh the cost (not to mention their longevity credentials and thus cost per wear considerations). Not only are they of higher quality and more durable, but they also pose fewer health risks compared to synthetic fabrics. "}</>;
 const text06 = <>{"In addition, their production is more sustainable and contributes less to pollution and greenhouse gas emissions. By choosing sustainable clothing options for our little ones, we are not only making a smart investment but also taking a step towards a healthier and more sustainable future"}</>;
 
-function ArticleText({ text01, text02, text03 }) {
-    return(
-       <div className="article-text">
-            <div className="conteiner">
-                <p className="post">{text01}</p>
-                <p className="post" id="article04Text02">{text02}</p>
-                <p className="post" id="article04Text03">{text03}</p>
-            </div>
-       </div> 
-    );
-}
-function PointsTitle({ title, text }) {
-    return(
-        <div className="points-title">
-            <div className="conteiner">
-                <h3 className="points__title">{title}</h3>
-                <p className="points__post">{text}</p>
-            </div>
-        </div>
-    );
+export default function Article04() {
+  const pointsList = article04Points.map(point =>
+    <div key={point.id} className="article-point__items">
+      <img src={point.imgSrc} alt="#" />
+      <p className="article-point__text">{point.text}</p>
+    </div>
+  );
+  return (
+    <>
+      <ArticlePageHeading 
+        title={"Protecting Your Children: The Hidden Dangers of Synthetic Fabrics You Need to Know About"}
+        imgSrc={article04Image}
+        imgAlt={"Fabric recycling"}
+      />
+      <ArticleText
+        text01={text01} 
+        text02={text02}
+      />
+      <PointsTitle 
+        title={title01}
+        text={text03}
+      />
+      <ArticlePoints list={pointsList}/>
+      <ArticleText
+        text01={text04} 
+        text02={text05}
+        text03={text06}
+      />
+      <LatestArticles />
+      <Tend />
+    </>
+  );
 }
 
-export default function Article04() {
-    const pointsList = article04Points.map(point =>
-        <div key={point.id} className="article-point__items">
-            <img src={point.imgSrc} alt="#" />
-            <p className="article-point__text">{point.text}</p>
-        </div>
-    );
-    return (
-        <>
-            <ArticlePageHeading 
-              title={"Protecting Your Children: The Hidden Dangers of Synthetic Fabrics You Need to Know About"}
-              imgSrc={article04Image}
-              imgAlt={"Fabric recycling"}
-            />
-            <ArticleText
-              text01={text01} 
-              text02={text02}
-            />
-            <PointsTitle 
-              title={title01}
-              text={text03}
-            />
-            <ArticlePoints list={pointsList}/>
-            <ArticleText
-              text01={text04} 
-              text02={text05}
-              text03={text06}
-            />
-            <LatestArticles />
-            <Tend />
-        </>
-    );
+function ArticleText({ text01, text02, text03 }) {
+  return(
+    <div className="article-text">
+      <div className="conteiner">
+        <p className="post">{text01}</p>
+        <p className="post" id="article04Text02">{text02}</p>
+        <p className="post" id="article04Text03">{text03}</p>
+      </div>
+    </div> 
+  );
+}
+
+function PointsTitle({ title, text }) {
+  return(
+    <div className="points-title">
+      <div className="conteiner">
+        <h3 className="points__title">{title}</h3>
+        <p className="points__post">{text}</p>
+      </div>
+    </div>
+  );
 }
