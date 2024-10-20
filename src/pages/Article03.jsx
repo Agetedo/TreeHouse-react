@@ -21,35 +21,6 @@ const text08 = <>{"When storing delicate items like dresses, it's best to hang t
 const title04 = <>{"Let's make conscious choices"}</>;
 const text09 = <>{"By taking care of your children's clothes, you can save money, reduce waste, and teach your child valuable life skills. With a little bit of effort, you can ensure that their clothes last long enough to be passed down, look great, and are kind to the environment. Remember, taking care of our children's clothes is not just about the clothes themselves, but also about the lessons we teach them. By making conscious choices and taking good care of what we have, we can help create a better future for our children and the planet."}</>;
 
-function ArticleText({ text01, text02, text03, text04, title02, text05, text06 }) {
-  return(
-    <div className="article-text">
-      <div className="conteiner">
-        <p className="post">{text01}</p>
-        <p className="post" id="article03Text02">{text02}</p>
-        <h3 className="article-title">{title01}</h3>
-        <p className="post" id="article03Text03">{text03}</p>
-        <p className="post">{text04}</p>
-        <h3 className="article-title">{title02}</h3>
-        <p className="post" id="article03Text05">{text05}</p>
-        <p className="post">{text06}</p>
-      </div>
-    </div> 
-  );
-}
-
-function PostTitle({ title, text07, text08 }) {
-  return(
-    <div className="post-title">
-      <div className="conteiner">
-        <h3 className="post__title">{title}</h3>
-        <p className="post">{text07}</p>
-        <p className="post">{text08}</p>
-      </div>
-    </div>
-  );
-}
-
 export default function Article03() {
   const productList = shopGallery.map(product => 
     <SwiperSlide key={product.id} className="swiper-slide">
@@ -86,5 +57,34 @@ export default function Article03() {
       <LatestArticles />
       <Tend />
     </>
+  );
+}
+
+function ArticleText({ text01, text02, text03, text04, title02, text05, text06 }) {
+  return(
+    <div className="article-text">
+      <div className="conteiner">
+        <p className="post">{text01}</p>
+        <p className="post" id="article03Text02">{text02}</p>
+        <h3 className="article-title">{title01}</h3>
+        <p className="post" id="article03Text03">{text03}</p>
+        <p className="post">{text04}</p>
+        <h3 className="article-title">{title02}</h3>
+        <p className="post" id="article03Text05">{text05}</p>
+        <p className="post">{text06}</p>
+      </div>
+    </div> 
+  );
+}
+
+function PostTitle({ title, text07, text08 }) {
+  return(
+    <div className="post-title">
+      <div className="conteiner">
+        <h3 className="post__title">{title}</h3>
+        <p className="post">{text07}</p>
+        <p className="post">{text08}</p>
+      </div>
+    </div>
   );
 }
