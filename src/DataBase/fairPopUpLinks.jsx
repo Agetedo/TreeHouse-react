@@ -22,4 +22,4 @@ export const fairPopUpLinks = [{
     imgScr: "/global-RS-logo.png",
     imgAlt: "Global Recycled Standard logo",
     link: "https://idfl.com/services/audits-certifications/global-recycled-standard-grs/", 
-}]
+}];
