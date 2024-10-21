@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect } from "react";
 import teamVideoArrow from "/svg/team-video-arrow.svg";
 import playButton from "/play-button.png";
 import "..//styles/TeamVideo.scss";
