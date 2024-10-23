@@ -7,12 +7,12 @@ import { article06GreenPoints } from "../DataBase/article06GreenPoints";
 import Tend from "../components/Tend";
 import "..//styles/Article.scss";
 
-const text01 = <>{"As parents, we know how quickly kids can go through clothes. From playing outside to messy meals, it seems like there's always a stain or tear to contend with. But constantly replacing clothes isn't just tough on our wallets – it's also tough on the environment. Textile production is a major contributor to pollution and waste, and the more clothes we buy, the more we contribute to the problem."}</>;
-const title01 = <>{"Why It Matters"}</>;
-const text02 = <>{"Perhaps you did not know these facts:"}</>;
-const title02 = <>{"Tips for a More Sustainable Laundry Routine"}</>;
-const text03 = <>{"Fortunately, there are ways to make our laundry routines more sustainable and extend the life of our kids' clothes."}</>;
-const text04 = <>{"By following these simple tips, you can create a laundry routine that not only saves you time and money but also helps the environment by reducing water usage and waste. Plus, your kids' clothes will last longer, saving you the hassle of constantly replacing them. Remember, small changes can have a big impact, and with a little effort, you can create a more sustainable laundry routine that benefits both your family and the planet. So, start implementing these hacks today and see the difference it makes!"}</>;
+const text01 = "As parents, we know how quickly kids can go through clothes. From playing outside to messy meals, it seems like there's always a stain or tear to contend with. But constantly replacing clothes isn't just tough on our wallets – it's also tough on the environment. Textile production is a major contributor to pollution and waste, and the more clothes we buy, the more we contribute to the problem.";
+const title01 = "Why It Matters";
+const text02 = "Perhaps you did not know these facts:";
+const title02 = "Tips for a More Sustainable Laundry Routine";
+const text03 = "Fortunately, there are ways to make our laundry routines more sustainable and extend the life of our kids' clothes.";
+const text04 = "By following these simple tips, you can create a laundry routine that not only saves you time and money but also helps the environment by reducing water usage and waste. Plus, your kids' clothes will last longer, saving you the hassle of constantly replacing them. Remember, small changes can have a big impact, and with a little effort, you can create a more sustainable laundry routine that benefits both your family and the planet. So, start implementing these hacks today and see the difference it makes!";
 
 export default function Article06() {
   const pointsList = article06Points.map(point =>
