@@ -8,13 +8,13 @@ import {
 import ellipsePoint from "/svg/conditions-ellipse-point.svg";
 import "..//styles/Conditions.scss";
 
-const importantText01 = <>{"Be sure to click on 'SEND GIFT CARD' on this page as you place your order. Instant Message a link to the recipient or Print to give in person. Plus you can add any Message here as well."}</>;
-const importantText02 = <>{"Our gift cards have no additional are valid for 1 year from the date of purchase."}</>;
-const importantText03 = <>{"Treehouse Gift Cards may not be purchased using promotional offers or discounts"}</>;
-const whatElseText01 = <>{"Treehouse Cards are available for any amount between 25.00 USD and 500.00 USD"}</>;
-const whatElseText02 = <>{"You may have them sent to your email or emailed directly to the recipient with a personal message."}</>;
-const whatElseText03 = <>{"If the denomination you would like is not available here, simply email us at info@mygreenkid.com"}</>;
-const whatElseText04 = <>{"Purchases will be deducted from the Gift Card until the value reaches zero. To check your balance, please email us at info@mygreenkid.com"}</>;
+const importantText01 = "Be sure to click on 'SEND GIFT CARD' on this page as you place your order. Instant Message a link to the recipient or Print to give in person. Plus you can add any Message here as well.";
+const importantText02 = "Our gift cards have no additional are valid for 1 year from the date of purchase.";
+const importantText03 = "Treehouse Gift Cards may not be purchased using promotional offers or discounts";
+const whatElseText01 = "Treehouse Cards are available for any amount between 25.00 USD and 500.00 USD";
+const whatElseText02 = "You may have them sent to your email or emailed directly to the recipient with a personal message.";
+const whatElseText03 = "If the denomination you would like is not available here, simply email us at info@mygreenkid.com";
+const whatElseText04 = "Purchases will be deducted from the Gift Card until the value reaches zero. To check your balance, please email us at info@mygreenkid.com";
 
 export default function Conditions({ caption }) {
   return (
