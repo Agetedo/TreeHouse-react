@@ -4,43 +4,43 @@
   display: inline-block;
 }
 #color {
-    display: inline-flex;
-    align-items: center;
-    gap: 20px;
-    span {
-      display: block;
-      line-height: 14px;
-    }
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
+  span {
+    display: block;
+    line-height: 14px;
+  }
 }
 #productColor {
-    width: 32px;
-    height: 32px;
-    background-color: #D7C9BE;
-    border: 1px solid var(--green-color);
+  width: 32px;
+  height: 32px;
+  background-color: #D7C9BE;
+  border: 1px solid var(--green-color);
 }
 #colorTooltip {
+  position: absolute;
+  top: -26px;
+  right: -26px;
+  display: flex;
+  align-self: flex-end;
+  cursor: pointer;
+  transition: all 1s ease;
+  .tooltip-text {
     position: absolute;
-    top: -26px;
-    right: -26px;
-    display: flex;
-    align-self: flex-end;
-    cursor: pointer;
-    transition: all 1s ease;
-    .tooltip-text {
-      position: absolute;
-      margin-top: 22px;
-      margin-left: 14px;
-      visibility: hidden;
-      z-index: 1;
-      padding: 30px;
-      width: 277px;
-      background-color: var(--color-tooltip-bg);
-      line-height: 19px;
-      border-radius: 8px;
-      box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.20);
-      opacity: 0;
-      transition: opacity 0.3s;
-    }
+    margin-top: 22px;
+    margin-left: 14px;
+    visibility: hidden;
+    z-index: 1;
+    padding: 30px;
+    width: 277px;
+    background-color: var(--color-tooltip-bg);
+    line-height: 19px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.20);
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
 }
 #colorTooltip:hover .tooltip-text {
     visibility: visible;
