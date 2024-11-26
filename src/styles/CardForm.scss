@@ -156,20 +156,20 @@
     cursor: pointer;
     transition: all 1s ease;
   }
-    #productNumber {
-      width: 35px;
-      height: 50px;
-      outline: none;
-      background-color: transparent;
-      border: 1px solid var(--green-color);
-      font-family: 'GT Cinetype Trial';
-      font-size: 18px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 18px;
-      color: var(--green-color);
-      text-align: center;
-    }
+  #productNumber {
+    width: 35px;
+    height: 50px;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid var(--green-color);
+    font-family: 'GT Cinetype Trial';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    color: var(--green-color);
+    text-align: center;
+  }
 }
 .product-quantity__items #productMinus {
     border-right: 0;
