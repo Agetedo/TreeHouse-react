@@ -172,16 +172,16 @@
   }
 }
 .product-quantity__items #productMinus {
-    border-right: 0;
-    border-radius: 8px 0px 0px 8px;
+  border-right: 0;
+  border-radius: 8px 0px 0px 8px;
 }
 .product-quantity__items #productPlus {
-    border-left: 0;
-    border-radius: 0px 8px 8px 0px;
+  border-left: 0;
+  border-radius: 0px 8px 8px 0px;
 }
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
-    -webkit-appearance: none; 
+  -webkit-appearance: none; 
 }
 input[type="number"],
 input[type="number"]:hover,
