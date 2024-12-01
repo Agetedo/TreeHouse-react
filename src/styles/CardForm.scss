@@ -209,17 +209,17 @@ input[type="number"]:focus {
 }
 //---@media-#cardForm-----------------
 @media (hover: hover) and (pointer: fine) {
-    .size__close:hover {
-      opacity: 0.7;  
-    }
-    #sizeGuide:hover,
-    .product-quantity__items #productMinus:hover,
-    .product-quantity__items #productPlus:hover {
-      opacity: 0.5;
-    }
-    #addCart:hover {
-      background-color: var(--green-color);  
-    }
+  .size__close:hover {
+    opacity: 0.7;  
+  }
+  #sizeGuide:hover,
+  .product-quantity__items #productMinus:hover,
+  .product-quantity__items #productPlus:hover {
+    opacity: 0.5;
+  }
+  #addCart:hover {
+    background-color: var(--green-color);  
+  }
 }
 @media (hover: none) {
     .size__close:active {
