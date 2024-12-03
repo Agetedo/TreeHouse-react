@@ -222,17 +222,17 @@ input[type="number"]:focus {
   }
 }
 @media (hover: none) {
-    .size__close:active {
-      opacity: 0.7;  
-    } 
-    #sizeGuide:active,
-    .product-quantity__items #productMinus:active,
-    .product-quantity__items #productPlus:active {
-      opacity: 0.5;
-    }
-    #addCart:active {
-      background-color: var(--green-color);  
-    }
+  .size__close:active {
+    opacity: 0.7;  
+  } 
+  #sizeGuide:active,
+  .product-quantity__items #productMinus:active,
+  .product-quantity__items #productPlus:active {
+    opacity: 0.5;
+  }
+  #addCart:active {
+    background-color: var(--green-color);  
+  }
 }
 @media(max-width: 1264px) {
     .product-color__items {
