@@ -238,9 +238,9 @@ input[type="number"]:focus {
   .product-color__items {
     margin-top: calc(28px + (56 - 28)*((100vw - 320px)/(1264 - 320)));
   }
-    .size__items select {
-      width: calc(180px + (230 - 180)*((100vw - 320px)/(1264 - 320)));
-    }
+  .size__items select {
+    width: calc(180px + (230 - 180)*((100vw - 320px)/(1264 - 320)));
+  }
     .size__items {
       gap: calc(8px + (36 - 8)*((100vw - 628px)/(1264 - 628)));
     }
