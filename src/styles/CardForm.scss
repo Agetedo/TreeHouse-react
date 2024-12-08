@@ -244,10 +244,10 @@ input[type="number"]:focus {
   .size__items {
     gap: calc(8px + (36 - 8)*((100vw - 628px)/(1264 - 628)));
   }
-    #productColor {
-      width: calc(20px + (32 - 20)*((100vw - 320px)/(1264 - 320)));
-      height: calc(20px + (32 - 20)*((100vw - 320px)/(1264 - 320)));
-    }
+  #productColor {
+    width: calc(20px + (32 - 20)*((100vw - 320px)/(1264 - 320)));
+    height: calc(20px + (32 - 20)*((100vw - 320px)/(1264 - 320)));
+  }
     #color {
       gap: calc(10px + (20 - 10)*((100vw - 320px)/(1264 - 320)));
     }
