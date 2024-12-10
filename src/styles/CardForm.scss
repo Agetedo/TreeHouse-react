@@ -248,9 +248,9 @@ input[type="number"]:focus {
     width: calc(20px + (32 - 20)*((100vw - 320px)/(1264 - 320)));
     height: calc(20px + (32 - 20)*((100vw - 320px)/(1264 - 320)));
   }
-    #color {
-      gap: calc(10px + (20 - 10)*((100vw - 320px)/(1264 - 320)));
-    }
+  #color {
+    gap: calc(10px + (20 - 10)*((100vw - 320px)/(1264 - 320)));
+  }
 }
 @media(max-width: 1024px) {
     #colorTooltip {
