@@ -253,9 +253,9 @@ input[type="number"]:focus {
   }
 }
 @media(max-width: 1024px) {
-    #colorTooltip {
-      display: none;
-    } 
+  #colorTooltip {
+    display: none;
+  } 
     #addCart {
       font-size: calc(11px + (14 - 11)*((100vw - 320px)/(1024 - 320)));
       line-height: calc(11px + (14 - 11)*((100vw - 320px)/(1024 - 320)));
