@@ -265,10 +265,10 @@ input[type="number"]:focus {
 }
 @media(max-width: 768px) {
   #sizeGuide,
-    .size__items label {
-      font-size: calc(12px + (14 - 12)*((100vw - 320px)/(768 - 320)));
-      line-height: calc(12px + (14 - 12)*((100vw - 320px)/(768 - 320)));
-    }
+  .size__items label {
+    font-size: calc(12px + (14 - 12)*((100vw - 320px)/(768 - 320)));
+    line-height: calc(12px + (14 - 12)*((100vw - 320px)/(768 - 320)));
+  }
     .size__items input, 
     .size__items select {
       margin-top: calc(4px + (8 - 4)*((100vw - 320px)/(768 - 320)));
