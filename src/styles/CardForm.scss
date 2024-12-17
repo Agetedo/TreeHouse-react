@@ -273,12 +273,12 @@ input[type="number"]:focus {
   .size__items select {
     margin-top: calc(4px + (8 - 4)*((100vw - 320px)/(768 - 320)));
   }
-    .size__items select,
-    .product-quantity__items #productNumber  {
+  .size__items select,
+  .product-quantity__items #productNumber  {
       font-size: calc(14px + (18 - 14)*((100vw - 320px)/(768 - 320)));
       line-height: calc(14px + (18 - 14)*((100vw - 320px)/(768 - 320)));
       height: calc(40px + (50 - 50)*((100vw - 320px)/(768 - 320)));
-    }
+  }
     .size__items select option{
       font-size: calc(14px + (18 - 14)*((100vw - 320px)/(768 - 320)));
       line-height: calc(14px + (18 - 14)*((100vw - 320px)/(768 - 320))); 
