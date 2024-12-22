@@ -283,9 +283,9 @@ input[type="number"]:focus {
     font-size: calc(14px + (18 - 14)*((100vw - 320px)/(768 - 320)));
     line-height: calc(14px + (18 - 14)*((100vw - 320px)/(768 - 320))); 
   }
-    .size__items select {
-      padding: 10px; 
-    }
+  .size__items select {
+    padding: 10px; 
+  }
     .product-quantity__items #productMinus, 
     .product-quantity__items #productPlus {
       font-size: calc(16px + (20 - 16)*((100vw - 320px)/(768 - 320)));
