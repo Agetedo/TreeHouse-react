@@ -286,12 +286,12 @@ input[type="number"]:focus {
   .size__items select {
     padding: 10px; 
   }
-    .product-quantity__items #productMinus, 
-    .product-quantity__items #productPlus {
-      font-size: calc(16px + (20 - 16)*((100vw - 320px)/(768 - 320)));
-      line-height: calc(16px + (20 - 16)*((100vw - 320px)/(768 - 320)));
-      height: calc(40px + (50 - 50)*((100vw - 320px)/(768 - 320)));
-    }
+  .product-quantity__items #productMinus, 
+  .product-quantity__items #productPlus {
+    font-size: calc(16px + (20 - 16)*((100vw - 320px)/(768 - 320)));
+    line-height: calc(16px + (20 - 16)*((100vw - 320px)/(768 - 320)));
+    height: calc(40px + (50 - 50)*((100vw - 320px)/(768 - 320)));
+  }
 }
 @media(max-width: 627px) {
     .size__items {
