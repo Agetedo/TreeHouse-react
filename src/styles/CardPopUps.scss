@@ -11,9 +11,9 @@
   padding: 0px;
   background-color: transparent;
   cursor: pointer;
-    img {
-      transition: all 1s ease;
-    }
+  img {
+    transition: all 1s ease;
+  }
 }
 .popup__button:nth-child(1) {
   animation: blink-2 0.7s 2 both;
