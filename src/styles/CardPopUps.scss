@@ -143,12 +143,12 @@
 }
 @media (hover: none) {
   .popup__close:active,
-    .popup__button img:active {
-      opacity: 0.5;
-    }
-    .content__links a:active {
-      opacity: 0.7;
-    }
+  .popup__button img:active {
+    opacity: 0.5;
+  }
+  .content__links a:active {
+    opacity: 0.7;
+  }
 }
 @media(max-width: 1024px) {
     .content {
