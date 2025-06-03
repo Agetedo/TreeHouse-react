@@ -162,7 +162,7 @@
   }
   .content .caption,
   .content #subTitle,
-    .content__steps .step__title,
+  .content__steps .step__title,
     .content__steps p {
       font-size: calc(10px + (14 - 10)*((100vw - 320px)/(1024 - 320)));
       line-height: calc(10px + (14 - 10)*((100vw - 320px)/(1024 - 320)));
