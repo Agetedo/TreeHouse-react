@@ -177,9 +177,9 @@
     font-size: calc(22px + (32 - 22)*((100vw - 320px)/(1024 - 320)));
     line-height: calc(22px + (32 - 22)*((100vw - 320px)/(1024 - 320)));
   }
-    .content #subTitle {
+  .content #subTitle {
       margin-top: calc(14px + (28 - 14)*((100vw - 320px)/(1024 - 320)));
-    }
+  }
     .content__items img {
       width: calc(27px + (34 - 27)*((100vw - 320px)/(1024 - 320)));
     }
