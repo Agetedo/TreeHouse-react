@@ -180,9 +180,9 @@
   .content #subTitle {
     margin-top: calc(14px + (28 - 14)*((100vw - 320px)/(1024 - 320)));
   }
-    .content__items img {
-      width: calc(27px + (34 - 27)*((100vw - 320px)/(1024 - 320)));
-    }
+  .content__items img {
+    width: calc(27px + (34 - 27)*((100vw - 320px)/(1024 - 320)));
+  }
     .content__steps p:not(:last-child) {
       margin-bottom: calc(20px + (24 - 20)*((100vw - 320px)/(1024 - 320)));
     }
