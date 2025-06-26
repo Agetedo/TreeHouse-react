@@ -183,9 +183,9 @@
   .content__items img {
     width: calc(27px + (34 - 27)*((100vw - 320px)/(1024 - 320)));
   }
-    .content__steps p:not(:last-child) {
-      margin-bottom: calc(20px + (24 - 20)*((100vw - 320px)/(1024 - 320)));
-    }
+  .content__steps p:not(:last-child) {
+    margin-bottom: calc(20px + (24 - 20)*((100vw - 320px)/(1024 - 320)));
+  }
     .content__steps p:last-child {
       margin-top: calc(5px + (8 - 5)*((100vw - 320px)/(1024 - 320)));
       font-size: calc(8px + (12 - 8)*((100vw - 320px)/(1024 - 320)));
