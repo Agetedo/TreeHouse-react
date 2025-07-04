@@ -189,7 +189,7 @@
   .content__steps p:last-child {
     margin-top: calc(5px + (8 - 5)*((100vw - 320px)/(1024 - 320)));
     font-size: calc(8px + (12 - 8)*((100vw - 320px)/(1024 - 320)));
-      line-height: calc(10px + (12 - 10)*((100vw - 320px)/(1024 - 320)));
+    line-height: calc(10px + (12 - 10)*((100vw - 320px)/(1024 - 320)));
   }
     .content__certificates {
       margin-top: calc(10px + (20 - 10)*((100vw - 320px)/(1024 - 320)));
