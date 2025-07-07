@@ -191,11 +191,11 @@
     font-size: calc(8px + (12 - 8)*((100vw - 320px)/(1024 - 320)));
     line-height: calc(10px + (12 - 10)*((100vw - 320px)/(1024 - 320)));
   }
-    .content__certificates {
+  .content__certificates {
       margin-top: calc(10px + (20 - 10)*((100vw - 320px)/(1024 - 320)));
       font-size: calc(9px + (14 - 9)*((100vw - 320px)/(1024 - 320)));
       line-height: calc(9px + (12 - 9)*((100vw - 320px)/(1024 - 320)));
-    }
+  }
 }
 @media(max-width: 400px) {
     .popup__wrapper {
