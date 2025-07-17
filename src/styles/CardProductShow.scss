@@ -5,11 +5,11 @@
   width: 100%;
 }
 #productShow {
-    position: relative;
+  position: relative;
     img {
       width: 597px;
       object-fit: cover;
-    }
+  }
     .swiper-pagination-fraction {
       width: 80px;
       bottom: var(--swiper-pagination-bottom, 0px);
