@@ -10,7 +10,7 @@
     width: 597px;
     object-fit: cover;
   }
-    .swiper-pagination-fraction {
+  .swiper-pagination-fraction {
       width: 80px;
       bottom: var(--swiper-pagination-bottom, 0px);
       left: calc(50% - 40px);
@@ -19,7 +19,7 @@
       border-radius: 4px 4px 0px 0px;
       line-height: 14px;
       color: var(--white-text-color);
-    }
+  }
 }
 #imgSelect{
    margin-top: 10px;
