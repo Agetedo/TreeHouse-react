@@ -43,7 +43,7 @@
   }
 }
 @media(max-width: 1024px) {
-    #productShow .swiper-pagination-fraction{
+  #productShow .swiper-pagination-fraction {
         width: calc(56px + (80 - 56)*((100vw - 628px)/(1264 - 628)));
         font-size: calc(10px + (14 - 10)*((100vw - 628px)/(1264 - 628)));
         line-height: calc(10px + (14 - 10)*((100vw - 628px)/(1264 - 628)));
@@ -57,7 +57,7 @@
         left: 0;
         bottom: 0;
         margin: auto;
-    }
+  }
 }
 @media(max-width: 627px) {
     #productShow .swiper-pagination-fraction {
