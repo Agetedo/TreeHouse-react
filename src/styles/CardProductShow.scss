@@ -53,10 +53,10 @@
     padding-left: calc(14px + (25 - 14)*((100vw - 628px)/(1264 - 628)));
     border-radius: calc(2px + (4 - 2)*((100vw - 628px)/(1264 - 628)))
                    calc(2px + (4 - 2)*((100vw - 628px)/(1264 - 628))) 0px 0px;
-        right: 0;
-        left: 0;
-        bottom: 0;
-        margin: auto;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
   }
 }
 @media(max-width: 627px) {
