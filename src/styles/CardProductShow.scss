@@ -71,7 +71,7 @@
   }
 }
 @media(max-width: 626px) {
-    #productShow .swiper-pagination-fraction {
+  #productShow .swiper-pagination-fraction {
         width: calc(56px + (80 - 56)*((100vw - 320px)/(626 - 320)));
         font-size: calc(10px + (14 - 10)*((100vw - 320px)/(626 - 320)));
         line-height: calc(10px + (14 - 10)*((100vw - 320px)/(626 - 320)));
@@ -85,5 +85,5 @@
         left: 0;
         bottom: 0;
         margin: auto;
-    }
+  }
 }
