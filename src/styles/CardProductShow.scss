@@ -72,7 +72,7 @@
 }
 @media(max-width: 626px) {
   #productShow .swiper-pagination-fraction {
-        width: calc(56px + (80 - 56)*((100vw - 320px)/(626 - 320)));
+    width: calc(56px + (80 - 56)*((100vw - 320px)/(626 - 320)));
         font-size: calc(10px + (14 - 10)*((100vw - 320px)/(626 - 320)));
         line-height: calc(10px + (14 - 10)*((100vw - 320px)/(626 - 320)));
         padding-top: calc(4px + (7 - 4)*((100vw - 320px)/(626 - 320)));
